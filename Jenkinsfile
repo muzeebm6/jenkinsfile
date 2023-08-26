@@ -6,7 +6,8 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-                git 'https://github.com/muzeebm6/jenkinsfile.git'
+                git branch: 'main', 
+                url: 'https://github.com/muzeebm6/jenkinsfile.git'
             }
          }        
        stage('Build'){
